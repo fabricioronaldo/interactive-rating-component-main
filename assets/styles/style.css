@@ -22,7 +22,7 @@ ul {
 .container {
   width: 300px;
   height: 400px;
-  background: hsl(213deg, 19%, 18%);
+  background: rgba(37, 45, 55, 0.3);
   padding: 1rem;
   border-radius: 15px;
 }
@@ -30,12 +30,12 @@ ul {
 @media screen and (min-width: 1024px) {
   .container {
     width: 400px;
-    height: 500px;
+    height: auto;
     padding: 2rem;
   }
 }
 .card__image {
-  background: hsl(217deg, 12%, 63%);
+  background: rgba(149, 158, 172, 0.07);
   width: 40px;
   height: 40px;
   display: flex;
@@ -54,22 +54,68 @@ ul {
 
 .card__navegation {
   width: 100%;
+  padding: 1rem 0;
 }
 
 ul {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
 }
 
 .navegation__pages {
+  display: flex;
+  width: 50px;
+  height: 50px;
   list-style: none;
-  background: hsl(217deg, 12%, 63%);
-  text-align: center;
-  padding: 20px;
+  background: rgba(149, 158, 172, 0.07);
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
+  transition: 0.5s;
 }
 
+.navegation__pages:hover {
+  background: hsl(25deg, 97%, 53%);
+}
+
+.navegation__pages label {
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 700;
+}
+
+.radio__button {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  ul {
+    gap: 30px;
+  }
+}
 .card__secundary {
   display: none;
+}
+
+.card__button {
+  padding: 2rem 1rem;
+}
+
+.button {
+  width: 100%;
+  background: hsl(25deg, 97%, 53%);
+  border: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
 }/*# sourceMappingURL=style.css.map */

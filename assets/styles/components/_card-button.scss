@@ -1,0 +1,22 @@
+
+.card__button {
+    padding: 2rem 1rem;
+}
+.button {
+    width: 100%;
+    background: $orange;
+    border: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}    
+
+.button:hover {
+    background: $white;
+    color: $orange;
+};

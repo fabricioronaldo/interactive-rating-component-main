@@ -1,4 +1,5 @@
 .card__navegation {
+    display: none;
     width: 100%;
     padding: 1rem 0;    
 }
@@ -33,7 +34,9 @@ ul {
 .radio__button {
     display: none;
 }
-
+.radio__button:checked {
+    background: $light-grey;
+}
 @media  screen and (min-width: 1024px){
     ul {
         gap: 30px;

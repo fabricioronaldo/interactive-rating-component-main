@@ -1,5 +1,4 @@
 .card__navegation {
-    display: none;
     width: 100%;
     padding: 1rem 0;    
 }
@@ -20,25 +19,53 @@ ul {
     align-items: center;
     border-radius: 50%;
     transition: 0.5s;
+    color: $light-grey;
+    font-weight: 700;
 }
+
+.active {
+    background: $light-grey;
+    color: $white;
+}
+
 
 .navegation__pages:hover {
     background: $orange;
-}
-
-.navegation__pages label {
-    color: $light-grey;
-    font-weight: 700;
+    cursor: pointer;
 }
 
 .radio__button {
     display: none;
 }
-.radio__button:checked {
+
+.checked__radio {
     background: $light-grey;
 }
+
+.card__result {
+    background: $light-grey-r;
+    border-radius: 20px;
+    margin: 0 30px;
+    h3{
+        color: $orange;
+        padding: 0.6rem;
+    }
+    
+}
+
 @media  screen and (min-width: 1024px){
     ul {
         gap: 30px;
+    }
+
+    .card__result {
+        background: $light-grey-r;
+        border-radius: 20px;
+        margin: 0 80px;
+        h3{
+            color: $orange;
+            padding: 0.6rem;
+        }
+        
     }
 }

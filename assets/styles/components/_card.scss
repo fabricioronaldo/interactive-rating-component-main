@@ -1,10 +1,26 @@
-.card__image {
-    background: $light-grey-r;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+.card-1 {
+    
+    .card__image {
+        background: $light-grey-r;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }        
 }
+
+.card-2{
+    text-align: center;
+    padding: 2.1rem 0;
+}
+
+.active {
+    display: none;
+}
+
+
+
+
 

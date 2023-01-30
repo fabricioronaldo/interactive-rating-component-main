@@ -19,7 +19,7 @@ ul {
     height: 100vh;
   }
 }
-.container, .container__2 {
+.container {
   width: 300px;
   height: 400px;
   background: rgba(37, 45, 55, 0.3);
@@ -34,7 +34,7 @@ ul {
     padding: 2rem;
   }
 }
-.card__image {
+.card-1 .card__image {
   background: rgba(149, 158, 172, 0.07);
   width: 40px;
   height: 40px;
@@ -42,6 +42,15 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.card-2 {
+  text-align: center;
+  padding: 2.1rem 0;
+}
+
+.active {
+  display: none;
 }
 
 .content__title {
@@ -53,7 +62,6 @@ ul {
 }
 
 .card__navegation {
-  display: none;
   width: 100%;
   padding: 1rem 0;
 }
@@ -74,28 +82,50 @@ ul {
   align-items: center;
   border-radius: 50%;
   transition: 0.5s;
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 700;
+}
+
+.active {
+  background: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 .navegation__pages:hover {
   background: hsl(25deg, 97%, 53%);
-}
-
-.navegation__pages label {
-  color: hsl(217deg, 12%, 63%);
-  font-weight: 700;
+  cursor: pointer;
 }
 
 .radio__button {
   display: none;
 }
 
-.radio__button:checked {
+.checked__radio {
   background: hsl(217deg, 12%, 63%);
+}
+
+.card__result {
+  background: rgba(149, 158, 172, 0.07);
+  border-radius: 20px;
+  margin: 0 30px;
+}
+.card__result h3 {
+  color: hsl(25deg, 97%, 53%);
+  padding: 0.6rem;
 }
 
 @media screen and (min-width: 1024px) {
   ul {
     gap: 30px;
+  }
+  .card__result {
+    background: rgba(149, 158, 172, 0.07);
+    border-radius: 20px;
+    margin: 0 80px;
+  }
+  .card__result h3 {
+    color: hsl(25deg, 97%, 53%);
+    padding: 0.6rem;
   }
 }
 .card__button {
@@ -119,4 +149,5 @@ ul {
 .button:hover {
   background: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
